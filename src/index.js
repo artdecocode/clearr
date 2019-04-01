@@ -2,7 +2,7 @@
  * Clears the carriage return like the terminal would.
  * @param {string} string The string with the `\r`.
  * @example
- * const res = clearR(`...\r..?\r.!`)
+ * const res = clearR('...\r..?\r.!')
  * // output: .!?
  */
 const clearR = (string) => {

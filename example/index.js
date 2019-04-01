@@ -1,9 +1,5 @@
 /* alanode example/ */
-import clearr from '../src'
+import clearR from '../src'
 
-(async () => {
-  const res = await clearr({
-    text: 'example',
-  })
-  console.log(res)
-})()
+const res = clearR('...\r..?\r.!')
+console.log(res)

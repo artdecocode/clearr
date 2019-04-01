@@ -27,7 +27,11 @@
     "url": "git://github.com/artdecocode/clearr.git"
   },
   "keywords": [
-    "clearr"
+    "clearr",
+    "carriage return",
+    "return",
+    "remove",
+    "terminal"
   ],
   "author": "Anton <anton@adc.sh>",
   "license": "MIT",

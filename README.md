@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/clearr.svg)](https://npmjs.org/package/clearr)
 
-`clearr` is Updates The String To Remove R (Carriage Return) Just Like The Terminal Would Do.
+`clearr` Updates The String To Remove `\r` (Carriage Return) Just Like The Terminal Would Do.
 
 ```sh
 yarn add -E clearr
@@ -12,8 +12,7 @@ yarn add -E clearr
 
 - [Table Of Contents](#table-of-contents)
 - [API](#api)
-- [`clearr(arg1: string, arg2?: boolean)`](#mynewpackagearg1-stringarg2-boolean-void)
-  * [`Config`](#type-config)
+- [`clearr(string: string): string`](#clearrstring-string-string)
 - [Copyright](#copyright)
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/0.svg?sanitize=true"></a></p>
@@ -28,30 +27,19 @@ import clearr from 'clearr'
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/1.svg?sanitize=true"></a></p>
 
-## `clearr(`<br/>&nbsp;&nbsp;`arg1: string,`<br/>&nbsp;&nbsp;`arg2?: boolean,`<br/>`): void`
+## `clearr(`<br/>&nbsp;&nbsp;`string: string,`<br/>`): string`
 
-Call this function to get the result you want.
-
-__<a name="type-config">`Config`</a>__: Options for the program.
-
-|   Name    |   Type    |    Description    | Default |
-| --------- | --------- | ----------------- | ------- |
-| shouldRun | _boolean_ | A boolean option. | `true`  |
-| __text*__ | _string_  | A text to return. | -       |
+Clears the carriage return like the terminal would.
 
 ```js
 /* alanode example/ */
-import clearr from 'clearr'
+import clearR from 'clearr'
 
-(async () => {
-  const res = await clearr({
-    text: 'example',
-  })
-  console.log(res)
-})()
+const res = clearR('...\r..?\r.!')
+console.log(res)
 ```
 ```
-example
+.!?
 ```
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/2.svg?sanitize=true"></a></p>

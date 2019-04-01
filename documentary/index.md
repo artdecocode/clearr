@@ -2,7 +2,7 @@
 
 %NPM: clearr%
 
-`clearr` is Updates The String To Remove R (Carriage Return) Just Like The Terminal Would Do.
+`clearr` Updates The String To Remove `\r` (Carriage Return) Just Like The Terminal Would Do.
 
 ```sh
 yarn add -E clearr

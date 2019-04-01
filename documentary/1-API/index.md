@@ -8,16 +8,13 @@ import clearr from 'clearr'
 
 %~%
 
-```## clearr
+```## clearr => string
 [
-  ["arg1", "string"],
-  ["arg2?", "boolean"]
+  ["string", "string"]
 ]
 ```
 
-Call this function to get the result you want.
-
-%TYPEDEF types/index.xml%
+Clears the carriage return like the terminal would.
 
 %EXAMPLE: example, ../src => clearr%
 %FORK example%
