@@ -1,22 +1,11 @@
-import { equal, ok } from 'zoroaster/assert'
-import Context from '../context'
-import clearr from '../../src'
+import { equal } from 'zoroaster/assert'
+import clearR from '../../src'
 
-/** @type {Object.<string, (c: Context)>} */
-const T = {
-  context: Context,
-  'is a function'() {
-    equal(typeof clearr, 'function')
-  },
-  async 'calls package without error'() {
-    await clearr()
-  },
-  async 'gets a link to the fixture'({ FIXTURE }) {
-    const res = await clearr({
-      text: FIXTURE,
-    })
-    ok(res, FIXTURE)
+export default {
+  'replaces \\r correctly'() {
+    const res = clearR(`hello world
+...\r..?\r.!`)
+    equal(res, `hello world
+.!?`)
   },
 }
-
-export default T
