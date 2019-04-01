@@ -1,6 +1,6 @@
 {
   "name": "clearr",
-  "version": "0.0.0-pre",
+  "version": "1.0.0",
   "description": "Updates The String To Remove R (Carriage Return) Just Like The Terminal Would Do.",
   "main": "build/index.js",
   "module": "src/index.js",
